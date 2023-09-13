@@ -4,4 +4,4 @@ files:
       - .github/
       - site/
       - filesystem/
-    translation: '%original_path%/%original_file_name%'
+    translation: /%original_path%/%locale%/%original_file_name%

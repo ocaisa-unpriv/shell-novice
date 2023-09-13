@@ -11,15 +11,13 @@ exercises: 15
 - Write a shell script that operates on a set of files defined by the user on the command line.
 - Create pipelines that include shell scripts you, and others, have written.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
 - How can I save and re-use commands?
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 We are finally ready to see what makes the shell such a powerful programming environment. We are going to take the commands we repeat frequently and save them in files so that we can re-run all those operations again later by typing a single command. For historical reasons, a bunch of commands saved in a file is usually called a **shell script**, but make no mistake --- these are actually small programs.
 
@@ -65,8 +63,7 @@ Sure enough, our script's output is exactly what we would get if we ran that pip
 We usually call programs like Microsoft Word or LibreOffice Writer "text editors", but we need to be a bit more careful when it comes to programming. By default, Microsoft Word uses `.docx` files to store not only text, but also formatting information about fonts, headings, and so on. This extra information isn't stored as characters and doesn't mean anything to tools like `head`, which expects input files to contain nothing but the letters, digits, and punctuation on a standard computer keyboard. When editing programs, therefore, you must either use a plain text editor or be careful to save files as plain text.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 What if we want to select lines from an arbitrary file? We could edit `middle.sh` each time to change the filename, but that would probably take longer than typing the command out again in the shell and executing it with a new file name. Instead, let's edit `middle.sh` and make it more versatile:
 
@@ -115,8 +112,7 @@ ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
 For the same reason that we put the loop variable inside double-quotes, in case the filename happens to contain any spaces, we surround `$1` with double-quotes.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 Currently, we need to edit `middle.sh` each time we want to adjust the range of lines that is returned. Let's fix that by configuring our script to instead use three command-line arguments. After the first command-line argument (`$1`), each additional argument that we provide will be accessible via the special variables `$1`, `$2`, `$3`, which refer to the first, second, third command-line arguments, respectively.
 
@@ -252,8 +248,7 @@ done
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 Suppose we have just run a series of commands that did something useful --- for example, creating a graph we'd like to use in a paper. We'd like to be able to re-create the graph later if we need to, so we want to save the commands in a file. Instead of typing them in again (and potentially getting them wrong) we can do this:
 
@@ -296,8 +291,7 @@ If a command causes something to crash or hang, it might be useful to know what 
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 In practice, most people develop shell scripts by running commands at the shell prompt a few times to make sure they're doing the right thing, then saving them in a file for re-use. This style of work allows people to recycle what they discover about their data and their workflow with one call to `history` and a bit of editing to clean up the output and save it as a shell script.
 
@@ -399,8 +393,7 @@ The shell does not expand `'*.pdb'` because it is enclosed by quote marks. As su
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -441,8 +434,7 @@ With `wc -l $1/*.$2 | sort -n | tail -n 1` we'll see the final summary line: we 
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -487,8 +479,7 @@ cubane.pdb ethane.pdb methane.pdb octane.pdb pentane.pdb propane.pdb.pdb
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -530,8 +521,7 @@ The `-x` option causes `bash` to run in debug mode. This prints out each command
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 
 
@@ -544,7 +534,6 @@ The `-x` option causes `bash` to run in debug mode. This prints out each command
 - Place variables in quotes if the values might have spaces in them.
 - Letting users decide what files to process is more flexible and more consistent with built-in Unix commands.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 

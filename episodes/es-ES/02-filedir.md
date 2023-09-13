@@ -12,8 +12,7 @@ exercises: 10
 - Use options and arguments to change the behaviour of a shell command.
 - Demonstrate the use of tab completion and explain its advantages.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
@@ -21,15 +20,13 @@ exercises: 10
 - How can I see what files and directories I have?
 - How can I specify the location of a file or directory on my computer?
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::: instructor
 
 Introducing and navigating the filesystem in the shell (covered in [Navigating Files and Directories](02-filedir.md) section) can be confusing. You may have both terminal and GUI file explorer open side by side so learners can see the content and file structure while they're using terminal to navigate the system.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 The part of the operating system responsible for managing files and directories is called the **file system**. It organizes our data into files, which hold information, and directories (also called 'folders'), which hold files or other directories.
 
@@ -56,8 +53,7 @@ The home directory path will look different on different operating systems. On L
 We will also assume that your `pwd` command returns your user's home directory. If `pwd` returns something different, you may need to navigate there using `cd` or some commands in this lesson will not work as written. See [Exploring Other Directories](#exploring-other-directories) for more details on the `cd` command.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 To understand what a 'home directory' is, let's have a look at how the file system as a whole is organized.  For the sake of this example, we'll be illustrating the filesystem on our scientist Nelle's computer.  After this illustration, you'll be learning commands to explore your own filesystem, which will be constructed in a similar way, but not be exactly identical.
 
@@ -78,8 +74,7 @@ We know that our current working directory `/Users/nelle` is stored inside `/Use
 Notice that there are two meanings for the `/` character. When it appears at the front of a file or directory name, it refers to the root directory. When it appears *inside* a path, it's just a separator.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 Underneath `/Users`, we find one directory for each user with an account on Nelle's machine, her colleagues *imhotep* and *larry*.
 
@@ -126,8 +121,7 @@ Here, we can see that the home directory contains only **sub-directories**. Any 
 If your screen gets too cluttered, you can clear your terminal using the `clear` command. You can still access previous commands using <kbd>↑</kbd> and <kbd>↓</kbd> to move line-by-line, or by scrolling in your terminal.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 ### Getting help
 
@@ -154,8 +148,7 @@ We'll describe both ways next.
 Some commands are built in to the Bash shell, rather than existing as separate programs on the filesystem. One example is the `cd` (change directory) command. If you get a message like `No manual entry for cd`, try `help cd` instead. The `help` command is how you get usage information for [Bash built-ins](https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html).
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 #### The `--help` option
 
@@ -208,8 +201,7 @@ ls: invalid option -- 'j'
 Try 'ls --help' for more information.
 ```
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 #### The `man` command
 
@@ -234,8 +226,7 @@ Of course, there is a third way to access help for commands: searching the inter
 GNU provides links to its [manuals](https://www.gnu.org/manual/manual.html) including the [core GNU utilities](https://www.gnu.org/software/coreutils/manual/coreutils.html), which covers many commands introduced within this lesson.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -256,8 +247,7 @@ The `-l` option makes `ls` use a **l**ong listing format, showing not only the f
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -276,8 +266,7 @@ The most recently changed file is listed last when using `-rt`. This can be very
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 ### Exploring Other Directories
 
@@ -392,8 +381,7 @@ Note that in most command line tools, multiple options can be combined with a si
 In addition to the hidden directories `..` and `.`, you may also see a file called `.bash_profile`. This file usually contains shell configuration settings. You may also see other files and directories beginning with `.`. These are usually files and directories that are used to configure different programs on your computer. The prefix `.` is used to prevent these configuration files from cluttering the terminal when a standard `ls` command is used.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 These three commands are the basic commands for navigating the filesystem on your computer: `pwd`, `ls`, and `cd`. Let's explore some variations on those commands. What happens if you type `cd` on its own, without giving a directory?
 
@@ -476,8 +464,7 @@ $ cd -
 you'll see you're back in `~/Desktop/shell-lesson-data`. Run `cd -` again and you're back in `~/Desktop/shell-lesson-data/exercise-data/creatures`
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -514,8 +501,7 @@ Starting from `/Users/nelle/data`, which of the following commands could Nelle u
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -544,8 +530,7 @@ Using the filesystem diagram below, if `pwd` displays `/Users/thing`, what will 
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -576,8 +561,7 @@ pnas_sub/ pnas_final/ original/
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 ## General Syntax of a Shell Command
 
@@ -637,8 +621,7 @@ When options exist as both short and long options:
 - Use the short option when typing commands directly into the shell to minimize keystrokes and get your task done faster.
 - Use the long option in scripts to provide clarity. It will be read many times and typed once.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 ### Nelle's Pipeline: Organizing Files
 
@@ -699,8 +682,7 @@ This is called **tab completion**, and we will see it in many other tools as we 
 - A relative path specifies a location starting from the current location.
 - `.` on its own means 'the current directory'; `..` means 'the directory above the current one'.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 
 

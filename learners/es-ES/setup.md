@@ -33,7 +33,8 @@ Some computers include a default Unix Shell program. The steps below describe so
 If none of the options below address your circumstances, try an online search for: Unix shell \[your computer model\] \[your operating system\].
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 :::::::::::: solution
 

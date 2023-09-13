@@ -9,15 +9,13 @@ exercises: 0
 - Explique cómo se relaciona el shell con el teclado, la pantalla, el sistema operativo y los programas de los usuarios.
 - Explicar cuándo y por qué las interfaces de línea de comandos deben ser usadas en lugar de las interfaces gráficas.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
 - ¿Qué es un shell de comandos y por qué utilizaría uno?
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 ### Contexto
 
@@ -83,8 +81,7 @@ ks: command not found
 Esto puede suceder si el comando fue mal escrito o si el programa correspondiente a ese comando no está instalado.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 ## Pipeline de Nelle: Un problema típico
 
@@ -116,7 +113,6 @@ In order to achieve her task, Nelle needs to know how to:
 - Las principales ventajas de la terminal son su alta relación acción-tecla, su soporte para la automatización de tareas repetitivas, y que puede utilizarse para acceder a otras máquinas en una red.
 - A significant challenge when using the shell can be knowing what commands need to be run and how to run them.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 

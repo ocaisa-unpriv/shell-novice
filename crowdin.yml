@@ -1,3 +1,7 @@
 files:
-  - source: episodes/*.*
-    translation: episodes/%file_name%_%two_letters_code%.%file_extension%
+  - source: '*/*.md'
+    ignore:
+      - .github/
+      - site/
+      - filesystem/
+    translation: '%original_path%/%original_file_name%'

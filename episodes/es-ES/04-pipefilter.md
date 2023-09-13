@@ -11,15 +11,13 @@ exercises: 10
 - Explain what usually happens if a program or pipeline isn't given any input to process.
 - Explain the advantage of linking commands with pipes and filters.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
 - How can I combine existing commands to do new things?
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 Now that we know a few basic commands, we can finally look at the shell's most powerful feature: the ease with which it lets us combine existing programs in new ways. We'll start with the directory `shell-lesson-data/exercise-data/alkanes` that contains six files describing some simple organic molecules. The `.pdb` extension indicates that these files are in Protein Data Bank format, a simple text format that specifies the type and position of each atom in the molecule.
 
@@ -95,8 +93,7 @@ but don't type `*.pdb` (or anything else) after the command? Since it doesn't ha
 If you make this kind of mistake, you can escape out of this state by holding down the control key (<kbd>Ctrl</kbd>) and pressing the letter <kbd>C</kbd> once: <kbd>Ctrl</kbd>\+<kbd>C</kbd>. Then release both keys.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 ## Capturing output from commands
 
@@ -141,8 +138,7 @@ $ cat lengths.txt
 We'll continue to use `cat` in this lesson, for convenience and consistency, but it has the disadvantage that it always dumps the whole file onto your screen. More useful in practice is the command `less` (e.g. `less lengths.txt`). This displays a screenful of the file, and then stops. You can go forward one screenful by pressing the spacebar, or back one by pressing `b`.  Press `q` to quit.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 ## Filtering output
 
@@ -195,8 +191,7 @@ The `-n` option specifies a numerical rather than an alphanumerical sort.
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 We will also use the `-n` option to specify that the sort is numerical instead of alphanumerical. This does *not* change the file; instead, it sends the sorted result to the screen:
 
@@ -240,8 +235,7 @@ $ sort -n lengths.txt > lengths.txt
 Doing something like this may give you incorrect results and/or delete the contents of `lengths.txt`.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -284,8 +278,7 @@ We see from the second example that the `>>` operator also writes 'hello' to a f
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -316,8 +309,7 @@ Option 3 is correct. For option 1 to be correct we would only run the `head` com
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 ## Passing output to another command
 
@@ -393,8 +385,7 @@ Option 4 is the solution. The pipe character `|` is used to connect the output f
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 ## Tools designed to work together
 
@@ -442,8 +433,7 @@ The `head` command extracts the first 5 lines from `animals.csv`. Then, the last
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -481,8 +471,7 @@ $ cut -d , -f 2 animals.csv | sort | uniq
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -517,8 +506,7 @@ Option 4. is the correct answer. If you have difficulty understanding why, try r
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 ## Nelle's Pipeline: Checking Files
 
@@ -606,8 +594,7 @@ Suppose you want to delete your processed data files, and only keep your raw fil
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 
 
@@ -623,7 +610,6 @@ Suppose you want to delete your processed data files, and only keep your raw fil
 - `[first] | [second]` is a pipeline: the output of the first command is used as the input to the second.
 - The best way to use the shell is to use pipes to combine simple single-purpose programs (filters).
 
-:::::::::::::::::::::::::::::::::::::::::::::::
-:::
+:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
 
 

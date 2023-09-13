@@ -13,14 +13,12 @@ exercises: 10
 - Demonstrate how to see what commands have recently been executed.
 - Re-run recently executed commands without retyping them.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
 - How can I perform the same actions on many different files?
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 **Loops** are a programming construct which allow us to repeat a command or set of commands for each item in a list. As such they are key to productivity improvements through automation. Similar to wildcards and tab completion, using loops also reduces the amount of typing required (and hence reduces the number of typing mistakes).
@@ -72,7 +70,6 @@ CLASSIFICATION: equus monoceros
 The shell prompt changes from `$` to `>` and back again as we were typing in our loop. The second prompt, `>`, is different to remind us that we haven't finished typing a complete command yet. A semicolon, `;`, can be used to separate two commands written on a single line.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 When the shell sees the keyword `for`, it knows to repeat a command (or group of commands) once for each item in a list. Each time the loop runs (called an iteration), an item in the list is assigned in sequence to the **variable**, and the commands inside the loop are executed, before moving on to the next item in the list. Inside the loop, we call for the variable's value by putting `$` in front of it. The `$` tells the shell interpreter to treat the variable as a variable name and substitute its value in its place, rather than treat it as text or an external command.
@@ -90,7 +87,6 @@ If the *shell* prints `>` or `$` then it expects you to type something, and the 
 If *you* type `>` or `$` yourself, it is an instruction from you that the shell should redirect output or get the value of a variable.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 When using variables it is also possible to put the names into curly braces to clearly delimit the variable name: `$filename` is equivalent to `${filename}`, but is different from `${file}name`. You may find this notation in other people's programs.
@@ -152,7 +148,6 @@ $ for loop_variable in 0 1 2 3 4 5 6 7 8 9
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -221,7 +216,6 @@ propane.pdb
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -278,7 +272,6 @@ $ for filename in *c*
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -311,7 +304,6 @@ done
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -343,7 +335,6 @@ done
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 Let's continue with our example in the `shell-lesson-data/exercise-data/creatures` directory. Here's a slightly more complicated loop:
@@ -421,7 +412,6 @@ CAAGTGTTCC
 ...
 ```
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 We would like to modify each of the files in `shell-lesson-data/exercise-data/creatures`, but also save a version of the original files. We want to copy the original files to new files named `original-basilisk.dat` and `original-unicorn.dat`, for example. We can't use:
@@ -550,7 +540,6 @@ bash goostats.sh $datafile stats-$datafile; done
 We can move to the beginning of a line in the shell by typing <kbd>Ctrl</kbd>\+<kbd>A</kbd> and to the end using <kbd>Ctrl</kbd>\+<kbd>E</kbd>.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 When she runs her program now, it produces one line of output every five seconds or so:
@@ -586,7 +575,6 @@ stats-$datafile; done
 then she can re-run `goostats.sh` on the files simply by typing `!459`.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
@@ -600,7 +588,6 @@ There are a number of other shortcut commands for getting at the history.
 - `!$` retrieves the last word of the last command. That's useful more often than you might expect: after `bash goostats.sh NENE01729B.txt stats-NENE01729B.txt`, you can type `less !$` to look at the file `stats-NENE01729B.txt`, which is quicker than doing <kbd>↑</kbd> and editing the command-line.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -651,7 +638,6 @@ Try both versions for yourself to see the output! Be sure to open the `all.pdb` 
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -683,7 +669,6 @@ Try running the code for yourself to see which directories are created!
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 
@@ -699,7 +684,6 @@ Try running the code for yourself to see which directories are created!
 - Use <kbd>Ctrl</kbd>\+<kbd>R</kbd> to search through the previously entered commands.
 - Use `history` to display recent commands, and `![number]` to repeat a command by number.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 

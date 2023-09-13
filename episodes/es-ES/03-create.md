@@ -10,7 +10,6 @@ exercises: 20
 - Create files in that hierarchy using an editor or by copying and renaming existing files.
 - Delete, copy and move specified files and/or directories.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::: questions
@@ -18,7 +17,6 @@ exercises: 20
 - How can I create, copy, and delete files and directories?
 - How can I edit files?
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 
@@ -102,7 +100,6 @@ data/  results/
 
 Using the shell to create a directory is no different than using a file explorer. If you open the current directory using your operating system's graphical file explorer, the `thesis` directory will appear there too. While the shell and the file explorer are two different ways of interacting with the files, the files and directories themselves are the same.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
@@ -125,14 +122,12 @@ Many other characters have special meanings on the command line. We will learn a
 
 If you need to refer to names of files or directories that have spaces or other special characters, you should surround the name in quotes (`""`).
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::::  instructor
 
 Learners can sometimes get trapped within command-line text editors such as Vim, Emacs, or Nano. Closing the terminal emulator and opening a new one can be frustrating as learners will have to navigate to the correct folder again. Our recommendation to mitigate this problem is that instructors should use the same text editor as the learners during workshops (in most cases Nano).
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 ### Create a text file
@@ -152,7 +147,6 @@ When we say, '`nano` is a text editor' we really do mean 'text'. It can only wor
 
 No matter what editor you use, you will need to know where it searches for and saves files. If you start it from the shell, it will (probably) use your current working directory as its default location. If you use your computer's start menu, it may want to save files in your Desktop or Documents directory instead. You can change this by navigating to another directory the first time you 'Save As...'
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 Let's type in a few lines of text.
@@ -178,7 +172,6 @@ The Control key is also called the 'Ctrl' key. There are various ways in which u
 
 In nano, along the bottom of the screen you'll see `^G Get Help ^O WriteOut`. This means that you can use `Control-G` to get help and `Control-O` to save your file.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 `nano` doesn't leave any output on the screen after it exits, but `ls` now shows that we have created a file called `draft.txt`:
@@ -226,7 +219,6 @@ To avoid confusion later on, we suggest removing the file you've just created be
 $ rm my_file.txt
 ```
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
@@ -239,7 +231,6 @@ This is just a convention, albeit an important one. Files merely contain bytes; 
 
 Naming a PNG image of a whale as `whale.mp3` doesn't somehow magically turn it into a recording of whale song, though it *might* cause the operating system to associate the file with a music player program. In this case, if someone double-clicked `whale.mp3` in a file explorer program,the music player will automatically (and erroneously) attempt to open the `whale.mp3` file.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 ## Moving files and directories
@@ -339,7 +330,6 @@ Recall that `..` refers to the parent directory (i.e. one above the current dire
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 ## Copying files and directories
@@ -408,7 +398,6 @@ After creating and saving this file you realize you misspelled the filename! You
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -459,7 +448,6 @@ We start in the `/Users/jamie/data` directory, and create a new folder called `r
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 ## Removing files and directories
@@ -486,7 +474,6 @@ ls: cannot access 'quotes.txt': No such file or directory
 
 The Unix shell doesn't have a trash bin that we can recover deleted files from (though most graphical interfaces to Unix do).  Instead, when we delete files, they are unlinked from the file system so that their storage space on disk can be recycled. Tools for finding and recovering deleted files do exist, but there's no guarantee they'll work in any particular situation, since the computer may recycle the file's disk space right away.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -508,7 +495,6 @@ The `-i` option will prompt before (every) removal (use <kbd>Y</kbd> to confirm 
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 If we try to remove the `thesis` directory using `rm thesis`, we get an error message:
@@ -578,7 +564,6 @@ cp: target 'basilisk.dat' is not a directory
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 ### Using wildcards for accessing multiple files at once
@@ -595,7 +580,6 @@ Wildcards can be used in combination with each other. For example, `???ane.pdb` 
 
 When the shell sees a wildcard, it expands the wildcard to create a list of matching filenames *before* running the preceding command. As an exception, if a wildcard expression does not match any file, Bash will pass the expression as an argument to the command as it is. For example, typing `ls *.pdf` in the `alkanes` directory (which contains only files with names ending with `.pdb`) results in an error message that there is no file called `*.pdf`. However, generally commands like `wc` and `ls` see the lists of file names matching these expressions, but not the wildcards themselves. It is the shell, not the other programs, that expands the wildcards.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -628,7 +612,6 @@ The solution is `3.`
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -729,7 +712,6 @@ $ cp *-23-dataset* send_to_bob/all_datasets_created_on_a_23rd/
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -777,7 +759,6 @@ Jamie needs to move her files `fructose.dat` and `sucrose.dat` to the `analyzed`
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -844,7 +825,6 @@ The final set of commands generates the 'raw' and 'processed' directories at the
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
@@ -860,5 +840,4 @@ The final set of commands generates the 'raw' and 'processed' directories at the
 - Most files' names are `something.extension`. The extension isn't required, and doesn't guarantee anything, but is normally used to indicate the type of data in the file.
 - Depending on the type of work you do, you may need a more powerful text editor than Nano.
 
-:::::::::::::::::::::::::::::::::::::::::::::::
 :::

@@ -11,14 +11,16 @@ exercises: 20
 - Use the output of one command as the command-line argument(s) to another command.
 - Explain what is meant by 'text' and 'binary' files, and why many common tools don't handle the latter well.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
 - How can I find files?
 - How can I find things in files?
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 In the same way that many of us now use 'Google' as a verb meaning 'to find', Unix programmers often use the word 'grep'. 'grep' is a contraction of 'global/regular expression/print', a common sequence of operations in early Unix text editors. It is also the name of a very useful command-line program.
 
@@ -223,7 +225,8 @@ The correct answer is 3, because the `-w` option looks only for whole-word match
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -244,7 +247,8 @@ Software is like that.
 We use the `-E` option and put the pattern in quotes to prevent the shell from trying to interpret it. (If the pattern contained a `*`, for example, the shell would try to expand it before running `grep`.) The `^` in the pattern anchors the match to the start of the line. The `.` matches a single character (just like `?` in the shell), while the `o` matches an actual 'o'.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -306,7 +310,8 @@ $ bash count-species.sh bear .
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -347,7 +352,8 @@ Perceptive observers may have noticed that character names sometimes appear in a
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 While `grep` finds lines in files, the `find` command finds files themselves. Again, it has a lot of options; to show how the simplest ones work, we'll use the `shell-lesson-data/exercise-data` directory tree shown below.
 
@@ -476,7 +482,8 @@ $ find . -name "*.txt"
 `ls` and `find` can be made to do similar things given the right options, but under normal circumstances, `ls` lists everything it can, while `find` searches for things with certain properties and shows them.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 As we said earlier, the command line's power lies in combining tools. We've seen how to do that with pipes; let's look at another technique. As we just saw, `find . -name "*.txt"` gives us a list of all text files in or below the current directory. How can we combine that with `wc -l` to count the lines in all those files?
 
@@ -538,7 +545,8 @@ Option 3 is incorrect because it searches the contents of the files for lines wh
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -551,7 +559,8 @@ A handful of tools extend `grep` to handle a few non text formats. But a more ge
 A last option is to recognize that the shell and text processing have their limits, and to use another programming language. When the time comes to do this, don't be too hard on the shell. Many modern programming languages have borrowed a lot of ideas from it, and imitation is also the sincerest form of praise.
 
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 The Unix shell is older than most of the people who use it. It has survived so long because it is one of the most productive programming environments ever created --- maybe even *the* most productive. Its syntax may be cryptic, but people who have mastered it can experiment with different commands interactively, then use what they have learned to automate their work. Graphical user interfaces may be easier to use at first, but once learned, the productivity in the shell is unbeatable. And as Alfred North Whitehead wrote in 1911, 'Civilization advances by extending the number of important operations which we can perform without thinking about them.'
 
@@ -578,7 +587,8 @@ wc -l $(find . -name "*.dat") | sort -n
 ::::::::::::::::::::::
 :::
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 
 
@@ -590,6 +600,7 @@ wc -l $(find . -name "*.dat") | sort -n
 - `man [command]` displays the manual page for a given command.
 - `$([command])` inserts a command's output in place.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::: <!--- -->
+:::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

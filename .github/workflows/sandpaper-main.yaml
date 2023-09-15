@@ -55,6 +55,7 @@ jobs:
 
       - name: "Deploy Site"
         run: |
+          check_git_user(getwd(), name = "GitHub Actions", email = "actions@github.com")
           del_site <- sandpaper:::git_worktree_setup(".", fs::path(".","site","docs"), branch = "gh-pages", remote = "origin" )
           sandpaper:::build_lesson(preview = FALSE)
           system("mv site/docs site/en")

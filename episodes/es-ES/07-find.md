@@ -220,7 +220,6 @@ The correct answer is 3, because the `-w` option looks only for whole-word match
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -303,7 +302,6 @@ You would call the script above like this:
 $ bash count-species.sh bear .
 ```
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -344,7 +342,6 @@ Perceptive observers may have noticed that character names sometimes appear in a
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -535,7 +532,6 @@ Option 3 is incorrect because it searches the contents of the files for lines wh
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -575,7 +571,6 @@ wc -l $(find . -name "*.dat") | sort -n
 
 
 
-::::::::::::::::::::::
 :::
 
 :::

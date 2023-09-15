@@ -57,9 +57,11 @@ jobs:
         run: |
           sandpaper:::check_git_user(getwd(), name = "GitHub Actions", email = "actions@github.com")
           del_site <- sandpaper:::git_worktree_setup(".", fs::path(".","site","docs"), branch = "gh-pages", remote = "origin" )
+          sandpaper:::validate_lesson(getwd())
           sandpaper:::build_lesson(preview = FALSE)
           system("mv site/docs site/en")
           system("for DIR in episodes learners profiles instructors; do for FILE in $DIR/es-ES/*; do cp $FILE $DIR; done; done")
+          sandpaper:::validate_lesson(getwd())
           sandpaper:::build_lesson(preview = FALSE)
           system("mv site/docs site/es")
           system("mv site/en site/docs")

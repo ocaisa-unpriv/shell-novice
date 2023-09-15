@@ -145,7 +145,6 @@ $ for loop_variable in 0 1 2 3 4 5 6 7 8 9
 9
 ```
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -213,7 +212,6 @@ pentane.pdb
 propane.pdb
 ```
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -243,7 +241,6 @@ $ for filename in c*
 4 is the correct answer. `*` matches zero or more characters, so any file name starting with the letter c, followed by zero or more other characters will be matched.
 
 
-::::::::::::::::::::::
 :::
 
 How would the output differ from using this command instead?
@@ -269,7 +266,6 @@ $ for filename in *c*
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -301,7 +297,6 @@ done
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -332,7 +327,6 @@ done
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -635,7 +629,6 @@ Try both versions for yourself to see the output! Be sure to open the `all.pdb` 
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -666,7 +659,6 @@ Try running the code for yourself to see which directories are created!
 
 
 
-::::::::::::::::::::::
 :::
 
 :::

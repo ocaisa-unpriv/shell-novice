@@ -188,7 +188,6 @@ The `-n` option specifies a numerical rather than an alphanumerical sort.
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -275,7 +274,6 @@ We see from the second example that the `>>` operator also writes 'hello' to a f
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -306,7 +304,6 @@ Option 3 is correct. For option 1 to be correct we would only run the `head` com
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -382,7 +379,6 @@ Option 4 is the solution. The pipe character `|` is used to connect the output f
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -430,7 +426,6 @@ The `head` command extracts the first 5 lines from `animals.csv`. Then, the last
 2012-11-05,raccoon,7
 ```
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -468,7 +463,6 @@ The `uniq` command filters out adjacent matching lines in a file. How could you 
 $ cut -d , -f 2 animals.csv | sort | uniq
 ```
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -503,7 +497,6 @@ Option 4. is the correct answer. If you have difficulty understanding why, try r
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -591,7 +584,6 @@ Suppose you want to delete your processed data files, and only keep your raw fil
 
 
 
-::::::::::::::::::::::
 :::
 
 :::

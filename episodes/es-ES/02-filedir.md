@@ -244,7 +244,6 @@ The `-l` option makes `ls` use a **l**ong listing format, showing not only the f
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -263,7 +262,6 @@ The most recently changed file is listed last when using `-rt`. This can be very
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -498,7 +496,6 @@ Starting from `/Users/nelle/data`, which of the following commands could Nelle u
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -527,7 +524,6 @@ Using the filesystem diagram below, if `pwd` displays `/Users/thing`, what will 
 
 
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -558,7 +554,6 @@ pnas_sub/ pnas_final/ original/
 
 
 
-::::::::::::::::::::::
 :::
 
 :::

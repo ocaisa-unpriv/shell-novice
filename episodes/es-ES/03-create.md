@@ -210,7 +210,6 @@ $ touch my_file.txt
 
 3. Some programs do not generate output files themselves, but instead require that empty files have already been generated. When the program is run, it searches for an existing file to populate with its output.  The touch command allows you to efficiently generate a blank text file to be used by such programs.
 
-::::::::::::::::::::::
 :::
 
 To avoid confusion later on, we suggest removing the file you've just created before proceeding with the rest of the episode, otherwise future outputs may vary from those given in the lesson. To do this, use the following command:
@@ -327,7 +326,6 @@ $ mv sucrose.dat maltose.dat ../raw
 
 Recall that `..` refers to the parent directory (i.e. one above the current directory) and that `.` refers to the current directory.
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -395,7 +393,6 @@ After creating and saving this file you realize you misspelled the filename! You
 3. No, the period(.) indicates where to move the file, but does not provide a new file name; identical file names cannot be created.
 4. No, the period(.) indicates where to copy the file, but does not provide a new file name; identical file names cannot be created.
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -445,7 +442,6 @@ We start in the `/Users/jamie/data` directory, and create a new folder called `r
 3. No, see explanation above.  `proteins.dat` is located at `/Users/jamie/data/recombined`
 4. No, see explanation above.  `proteins-saved.dat` is located at `/Users/jamie`
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -492,7 +488,6 @@ rm: remove regular file 'thesis_backup/quotations.txt'? y
 
 The `-i` option will prompt before (every) removal (use <kbd>Y</kbd> to confirm deletion or <kbd>N</kbd> to keep the file). The Unix shell doesn't have a trash bin, so all the files removed will disappear forever. By using the `-i` option, we have the chance to check that we are deleting only the files that we want to remove.
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -561,7 +556,6 @@ If given three file names, `cp` throws an error such as the one below, because i
 cp: target 'basilisk.dat' is not a directory
 ```
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -609,7 +603,6 @@ The solution is `3.`
 
 `4.` only shows files starting with `ethane.`.
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -709,7 +702,6 @@ $ cp 2015-11-* send_to_bob/all_november_files/
 $ cp *-23-dataset* send_to_bob/all_datasets_created_on_a_23rd/
 ```
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -756,7 +748,6 @@ mv *.dat analyzed
 
 Jamie needs to move her files `fructose.dat` and `sucrose.dat` to the `analyzed` directory. The shell will expand \*.dat to match all .dat files in the current directory. The `mv` command then moves the list of .dat files to the 'analyzed' directory.
 
-::::::::::::::::::::::
 :::
 
 :::
@@ -822,7 +813,6 @@ The fourth set of commands achieve this objective. Remember, the `-p` option, fo
 
 The final set of commands generates the 'raw' and 'processed' directories at the same level as the 'data' directory.
 
-::::::::::::::::::::::
 :::
 
 :::

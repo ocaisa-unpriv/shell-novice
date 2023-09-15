@@ -55,7 +55,15 @@ jobs:
 
       - name: "Deploy Site"
         run: |
-          reset <- "${{ github.event.inputs.reset }}" == "true"
-          sandpaper::package_cache_trigger(TRUE)
-          sandpaper:::ci_deploy(reset = reset)
+          del_site <- sandpaper:::git_worktree_setup(".", fs::path(".","site","docs"), branch = "gh-pages", remote = "origin" )
+          sandpaper:::build_lesson(preview = FALSE)
+          system("mv site/docs site/en")
+          system("for DIR in episodes learners profiles instructors; do for FILE in $DIR/es-ES/*; do cp $FILE $DIR; done; done")
+          sandpaper:::build_lesson(preview = FALSE)
+          system("mv site/docs site/es")
+          system("mv site/en site/docs")
+          system("mv site/es site/docs/es")
+          sandpaper:::github_worktree_commit(fs::path(getwd(),"site","docs"), "hack", "origin", "gh-pages")
+          eval(del_site)
+          
         shell: Rscript {0}

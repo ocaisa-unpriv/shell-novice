@@ -49,7 +49,6 @@ As an alternative to Git for Windows you may wish to [Install the Windows Subsys
 
 Please note that commands in the Windows Subsystem for Linux (WSL) may differ slightly from those shown in the lesson or presented in the workshop.
 
-:::::::::
 :::
 
 :::::::::::: solution
@@ -69,7 +68,6 @@ If your machine is set up to use something other than Bash, you can run it by op
 
 [How to Use Terminal on a Mac][mac-terminal]
 
-:::::::::
 :::
 
 :::::::::::: solution
@@ -78,7 +76,6 @@ If your machine is set up to use something other than Bash, you can run it by op
 
 The default Unix Shell for Linux operating systems is usually Bash. On most versions of Linux, it is accessible by running the [Gnome Terminal][gnome-terminal] or [KDE Konsole][kde-konsole] or [xterm][], which can be found via the applications menu or the search bar. If your machine is set up to use something other than Bash, you can run it by opening a terminal and typing `bash`.
 
-:::::::::
 :::
 
 [zip-file]: data/shell-lesson-data.zip
